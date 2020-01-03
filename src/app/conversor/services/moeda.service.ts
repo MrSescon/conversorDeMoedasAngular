@@ -6,7 +6,7 @@ import { Moeda } from '../Models';
 })
 export class MoedaService {
 
-  private moedas: moeda[];
+  private moedas: Moeda[];
 
   constructor() { }
 
@@ -52,7 +52,7 @@ export class MoedaService {
 
     this.moedas = [];
 
-    for (let moeadObj of this.moedaObj) {
+    for (let moedaObj of this.moedaObj) {
       let moeda: Moeda = new Moeda ();
       Object.assign(moeda, moedaObj);
       this.moedas.push(moeda);
